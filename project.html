@@ -83,10 +83,73 @@ html {
   background-color: white;
 }
 
-.outline{
-  tex
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em
+}
 
-  }
+body{
+  background:;
+  box-sizing: border-box;
+}
+section{
+  padding: 10% 20%;
+}
+.animate{
+  transition: all .3s;
+}
+
+input[name=question]{
+    display: none;
+}
+input[name=question] + label{
+    position: relative;
+    display: block;
+    padding: 20px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: rgba(246, 246, 246, 1);
+    color: #5a9aa8;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+
+.response{
+    position: relative;
+    background: #7B2623;
+    color: #7A2723;
+    padding: 10px 20px;
+    -webkit-transform: translate3d(0,-40px, 0) rotate(-.5deg);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    opacity: 0;
+    border-radius: 3px;
+}
+
+input[name=question]:checked + label{
+    background: #F6F6F6;
+    color: #5a9aa8;
+}
+input[name=question]:checked + label + .response{
+    opacity: 1;
+    visibility: visible;
+    padding: 10px 20px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    -webkit-filter: blur(0px);
+    margin-bottom: 20px;
+    color: white;
+}
+
+.fixed-height{
+    height: 50px;
+    overflow: hidden;
+    opacity: 1 !important;
+}
 
 </style>
 </head>
@@ -206,8 +269,23 @@ html {
 <a href="https://github.com/NortunalCactus/Group20_IIT_A2">Our Git Repository</a> <br>
 [ Comments ]</big></p><br>
 <h2>Ⅳ . IT Work</h2><br>
-<h4>1. Please tell us about your IT work. What exactly do you do?</h4>
-  <p>My current role is Engineer Manager, which means I am responsible for a few different things. First and foremost, I manage the engineers who work under me. Specifically, I’m responsible for their career development and personal improvement. Also, I help with the hiring process. My secondary responsibilities are delivering work, overseeing all different teams at Skedulo, making sure that they’re working effectively and reporting to the executive team.</p>
+<section>
+<input class="animate" type="radio" name="question" id="q1"/>
+<label class="animate" for="q1">1. Please tell us about your IT work. What exactly do you do?</label>
+<p class="response animate">My current role is Engineer Manager, which means I am responsible for a few different things. First and foremost, I manage the engineers who work under me. Specifically, I’m responsible for their career development and personal improvement. Also, I help with the hiring process. My secondary responsibilities are delivering work, overseeing all different teams at Skedulo, making sure that they’re working effectively and reporting to the executive team.</p>
+
+<input class="animate" type="radio" name="question" id="q2"/>
+<label class="animate" for="q2">Q: Why do we use it?</label>
+<p class="response animate">A: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<input class="animate" type="radio" name="question" id="q3"/>
+<label class="animate" for="q3">Q: Where does it come for?</label>
+<p class="response animate">A: Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+<input class="animate" type="radio" name="question" id="q4"/>
+<label class="animate" for="q4">Q: Where can i get some?</label>
+<p class="response animate">A: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc..</p>
+</section>
   <h4>2. Can you please tell us about your history of working in the industry?</h4>
   <p>I began working in 1998, and I was still a sophomore student in university. Then I spent my first 13 years working as a software developer. Later on, I progressed from a junior developer to a technical lead role. The company at the time is involved in the development applications for the telecommunications industry, particularly for running on Windows PCs. Our software tracked the phone calls length and SMS to work out the fee someone needs to pay for their phone bill. The larger the population, the more complicated it got. Especially on Public Holidays, when messages are sent at the same time. So a lot of those problems were scaling at mass scale kind of problems. Then I got into leadership roles and operational excellence. Which eventually led to my management role now.</p>
 <h4>3. Who are all the different people you interact within your work? Please tell us about them.</h4>
