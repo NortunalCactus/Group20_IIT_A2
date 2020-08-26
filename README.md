@@ -1,10 +1,10 @@
 
   WELLCOME TO OUR TEAM SHOWCASE!
 
-  Assignment 2 - Group 20-Introduction to Information Technology - RMIT Vietnam - semester B
+  Assignment 2 - Group 20- Introduction to Information Technology - RMIT Vietnam - semester B
 
 
-  This is all the contributions from dedicated 4 human beings:
+  These are all the contributions from dedicated 4 human beings:
   1. Joo Jeong-Hyeon
   2. Nguyen Thi Quynh Giang
   3. Nguyen Ha Minh Duy
